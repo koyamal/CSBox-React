@@ -8,12 +8,13 @@ const style = {
 
 export const ChildArea = memo((props) => {
   console.log("Child Area is Rendered");
-  const { open } = props;
+  const { open, onClickClose } = props;
   return (
     <>
       {open && (
         <div style={style}>
           <p>Child Component</p>
+          <button onClick={onClickClose}>Close</button>
         </div>
       )}
     </>
