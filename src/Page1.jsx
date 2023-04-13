@@ -1,4 +1,5 @@
 import { Link, useHistory } from "react-router-dom";
+import { TestComponent } from "./TestComponent";
 
 export const Page1 = () => {
   const arr = [...Array(100).keys()];
@@ -14,6 +15,7 @@ export const Page1 = () => {
       <Link to="/page1/detailB">DetailB</Link>
       <br />
       <button onClick={onClickDetailA}>DetailA</button>
+      <TestComponent />
     </div>
   );
 };
